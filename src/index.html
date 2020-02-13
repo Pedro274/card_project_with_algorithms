@@ -21,32 +21,24 @@
     <title>BubbleSorting</title>
      
 
+</head>
+<body>
 
 </head>
 <body>
 
     <!--html content-->
     <div class="container">
-        <h2>JavaScript Array Sort</h2>
-
-        <p>Click the buttons to sort the array alphabetically or numerically.</p>
-    
-        <button onclick="myFunction1()">Sort Numerically</button>
-    
-        <p id="demo"></p>
+        <form class="form-inline mt-3">
+            <div class="form-group mx-sm-3 mb-2">
+            <input id="amount" type="password" class="form-control" id="inputPassword2" placeholder="How many cards?">
+            </div>
+            <button type="submit" id="draw" class="btn btn-primary mb-2 mr-1">Draw</button>
+            <button type="submit" id="sort" class="btn btn-primary mb-2">Sort</button>
+        </form>
     </div>
-    
-    
-    <script>
-    var points = [40, 100, 1, 5, 25, 10];
-    document.getElementById("demo").innerHTML = points;  
-    
-    function myFunction1() {
-      points.sort(function(a, b){return a - b});
-      document.getElementById("demo").innerHTML = points;
-    }
-    </script>
         
+
 
 
     <script src="C:\Users\jason\Documents\GitHub\card_project_with_algorithms\src\index.js"></script>
