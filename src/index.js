@@ -26,8 +26,6 @@ document.getElementById("sort").addEventListener("click", function(event){
     event.preventDefault()
 });
 
-// Inner HTML
-//document.getElementById("sortRow").innerHTML = "Heellooo";
 
 // BubbleSort
 let array1 = [3, 2, 4, 5, 7, 6, 8, 9, 10,"A", "J", "Q", "K"];
