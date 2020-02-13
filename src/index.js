@@ -13,14 +13,26 @@ document.getElementById("sort").addEventListener("click", function(event){
 //document.getElementById("sortRow").innerHTML = "Heellooo";
 
 // BubbleSort
-var points = [40, 100, 1, 5, 25, 10];
-document.getElementById("sortRow").innerHTML = points;  
+let array1 = [3, 2, 4, 5, 7, 6, 8, 9, 10,"A", "J", "Q", "K"];
 
-function myFunction1() {
-  points.sort();
-  document.getElementById("sortRow").innerHTML = points;
-}
-function myFunction2() {
-  points.sort(function(a, b){return a - b});
-  document.getElementById("sortRow").innerHTML = points;
-}
+const bubbleSort = (arr) => {
+    let wall = arr.length - 1; //we start the wall at the end of the array
+    while (wall > 0){
+        let index = 0;
+        while (index < wall) {
+          //compare the adjacent positions, if the right one is bigger, we have to swap
+          if (arr[index] > arr[index + 1]) { 
+            let aux = arr[index]; 
+            arr[index] = arr[index + 1];
+            arr[index + 1] = aux;
+            document.getElementById('sortRow').innerHTML += (arr);
+          }
+          index++;
+        }
+        wall--; //decrease the wall for optimization
+    }
+  return arr;
+  
+};
+
+bubbleSort(array1)
